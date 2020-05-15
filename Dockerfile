@@ -18,3 +18,9 @@ RUN pip3 install virtualenv
 
 RUN git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 RUN ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
+
+COPY src/ /app
+
+EXPOSE 5000
+CMD [ "python3", "/app/main.py" ]
+

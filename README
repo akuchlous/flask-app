@@ -1,6 +1,9 @@
-docker build --tag=flask-sd .
-
-docker run -it flask-sd /bin/bash
+flask tutorial for AWS
 
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html
+
+docker build --tag=flask-sd .
+
+docker run --publish --publish 5000:5000   flask-sd 
+
 
