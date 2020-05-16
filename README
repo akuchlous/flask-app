@@ -4,6 +4,6 @@ https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flas
 
 docker build --tag=flask-sd .
 
-docker run --publish --publish 5000:5000   flask-sd 
+docker run -p 5000:5000   flask-sd 
 
 
